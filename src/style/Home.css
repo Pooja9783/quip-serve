@@ -1,0 +1,30 @@
+.page-flex{
+    margin-top: 40px;
+}
+.paginationBttns {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    color: #000000;
+}
+
+.paginationBttns a {
+    padding:15px;
+    margin: 8px;
+    background: orange;
+    color: #000000;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.paginationBttns a:hover {
+    border: 1px solid orange;
+}
+
+.paginationActive a {
+    border: 1px solid orange;
+    background: white;
+}
+
