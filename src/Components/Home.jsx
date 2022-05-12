@@ -10,7 +10,6 @@ const Home = () => {
   const { id } = useParams();
   const [pageNumber, setPageNumber] = useState(0);
   const [value, setValue] = useState([]);
-
   const usersPerPage = 10;
   const pagesVisited = pageNumber * usersPerPage;
   const pageCount = Math.ceil(value.length / usersPerPage);
@@ -100,12 +99,16 @@ const Home = () => {
                       style={{ textDecoration: "none" }}
                     >
                       <div className="text-light">
-                        <p>{e.id}</p>
                         <p className="fs-4 text-start">
-                          <b className="text-warning">Title :</b> {e.title}
+                          {" "}
+                          <b className="text-warning">Id : </b>
+                          {e.id}
+                        </p>
+                        <p className="fs-4 text-start">
+                          <b className="text-warning">Title : </b> {e.title}
                         </p>
                         <p className="fs-5 text-start">
-                          <b className="text-warning">Body :</b> {e.body}
+                          <b className="text-warning">Body : </b> {e.body}
                         </p>
                       </div>
                     </Link>
